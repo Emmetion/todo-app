@@ -1,4 +1,4 @@
-import { Task, TaskAction } from "../Task";
+import { Task } from "../Task";
 import React, { useState } from "react";
 import { IoMdTrash } from "react-icons/io";
 

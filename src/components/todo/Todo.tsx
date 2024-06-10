@@ -2,17 +2,15 @@ import { ChangeEvent, useEffect, useRef, useState } from "react"
 import TodoTask from "./todo-task/TodoTask";
 import { Task } from "./Task";
 import { FaPlus } from "react-icons/fa";
-import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap";
-import { RiEdgeFill } from "react-icons/ri";
 
 export default function Todo() {
     const ref = useRef(false);
     const [taskValue, setTaskValue] = useState<string>('');
     const [error, setError] = useState<string>('')
     const [todoItems, setTodoItems] = useState<Task[]>(new Array<Task>) ;
-    const [completedItems, setCompletedItems] = useState<Task[]>(new Array<Task>);
+    // const [completedItems, setCompletedItems] = useState<Task[]>(new Array<Task>);
 
-    const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+    // const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
 
     const [id, setId] = useState<number>(0);
 
