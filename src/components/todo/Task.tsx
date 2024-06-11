@@ -4,8 +4,3 @@ export interface Task {
     timestamp: string;
     complete: boolean;
 }
-
-
-export interface TaskAction {
-    action: 'complete' | 'delete';
-}
